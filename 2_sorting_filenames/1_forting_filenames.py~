@@ -1,0 +1,10 @@
+# This code is to sort the filenames and save as org file.
+
+import re
+import os
+
+
+path = '/home/varghese/Desktop/DP2_TANSPEC/Data/tanspec_slopes'
+files_list = os.listdir(path)
+
+print(files_list)

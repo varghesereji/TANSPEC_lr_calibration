@@ -1,0 +1,40 @@
+
+from astropy.io import fits
+import numpy as np
+import os
+
+from extracting_header_values import extract_header
+from grouping_files import grouping_files
+
+
+grouped_files_list = grouping_files()
+q = 0
+for groups in grouped_files_list:
+    print('groups', groups)
+    if groups == []:
+        print(q)
+        pass
+    else:
+        Data_candidate = None
+        length = 0
+        for files in groups:
+            print(files)
+            data = fits.getdata(files)
+            file_header = extract_header(files)
+            if Data_candidate is None:
+                # print(q, Data_candidate)
+                Data_candidate = data
+            else:
+                Data_candidate = Data_candidate + data
+            length += 1
+        mean_data = Data_candidate / length
+        hdu = fits.ImageHDU()
+        hdu.data = mean_data
+        filename = 'Avg_' + file_header['FNAME'] + '.fits'
+        filename_path = os.path.join(
+            '/home/varghese/Desktop/DP2_TANSPEC/Data/Averaged_files',
+            filename)
+        hdu.header = file_header
+        hdu.writeto(filename)
+        # np.save('Averaged_data_{}.npy'.format(q), mean_data)
+    q += 1

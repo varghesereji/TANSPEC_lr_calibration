@@ -1,0 +1,236 @@
+
+* Continuum             
+
+**** LR
+***** s1.0
+|-----------------------+-------|
+| continuum2_lr_s1.0_hg | 00264 |
+| continuum2_lr_s1.0_hg | 00265 |
+| continuum2_lr_s1.0_hg | 00266 |
+| continuum2_lr_s1.0_hg | 00267 |
+| continuum2_lr_s1.0_hg | 00268 |
+| continuum2_lr_s1.0_hg | 00269 |
+| continuum2_lr_s1.0_hg | 00270 |
+| continuum2_lr_s1.0_hg | 00271 |
+| continuum2_lr_s1.0_hg | 00272 |
+| continuum2_lr_s1.0_hg | 00273 |
+| continuum2_lr_s1.0_hg | 00274 |
+| continuum2_lr_s1.0_hg | 00275 |
+| continuum2_lr_s1.0_hg | 00276 |
+| continuum2_lr_s1.0_hg | 00277 |
+| continuum2_lr_s1.0_hg | 00278 |
+| continuum2_lr_s1.0_hg | 00279 |
+| continuum2_lr_s1.0_hg | 00280 |
+| continuum2_lr_s1.0_hg | 00281 |
+| continuum2_lr_s1.0_hg | 00282 |
+| continuum2_lr_s1.0_hg | 00283 |
+| continuum2_lr_s1.0_hg | 00284 |
+| continuum2_lr_s1.0_hg | 00285 |
+|-----------------------+-------|
+
+***** s4.0
+|-----------------------+-------|
+| continuum2_lr_s4.0_hg | 00286 |
+| continuum2_lr_s4.0_hg | 00287 |
+| continuum2_lr_s4.0_hg | 00288 |
+| continuum2_lr_s4.0_hg | 00289 |
+| continuum2_lr_s4.0_hg | 00290 |
+| continuum2_lr_s4.0_hg | 00291 |
+| continuum2_lr_s4.0_hg | 00292 |
+| continuum2_lr_s4.0_hg | 00293 |
+| continuum2_lr_s4.0_hg | 00294 |
+| continuum2_lr_s4.0_hg | 00295 |
+| continuum2_lr_s4.0_hg | 00296 |
+|-----------------------+-------|
+
+**** XD
+***** s4.0
+|-----------------------+-------|
+| continuum2_xd_s4.0_hg | 00308 |
+| continuum2_xd_s4.0_hg | 00309 |
+| continuum2_xd_s4.0_hg | 00310 |
+| continuum2_xd_s4.0_hg | 00311 |
+| continuum2_xd_s4.0_hg | 00312 |
+|-----------------------+-------|
+***** s1.0
+|-----------------------+-------|
+| continuum2_xd_s1.0_hg | 00313 |
+| continuum2_xd_s1.0_hg | 00314 |
+| continuum2_xd_s1.0_hg | 00315 |
+| continuum2_xd_s1.0_hg | 00316 |
+| continuum2_xd_s1.0_hg | 00317 |
+|-----------------------+-------|
+
+***** s0.5
+|-----------------------+-------|
+| continuum2_xd_s0.5_hg | 00318 |
+| continuum2_xd_s0.5_hg | 00319 |
+| continuum2_xd_s0.5_hg | 00320 |
+| continuum2_xd_s0.5_hg | 00321 |
+| continuum2_xd_s0.5_hg | 00322 |
+|-----------------------+-------|
+
+* Dark sky
+
+**** XD
+***** s0.5
+|------------------+-------|
+| dark_sky_xd      | 00005 |
+| dark_sky_xd      | 00006 |
+| dark_sky_xd_300s | 00007 |
+| dark_sky_xd_300s | 00008 |
+| dark_sky_xd_300s | 00009 |
+| dark_sky_xd_300s | 00010 |
+| dark_sky_xd_300s | 00011 |
+| dark_sky_xd      | 00037 |
+| dark_sky_xd      | 00038 |
+| dark_sky_xd      | 00039 |
+| dark_sky_xd      | 00040 |
+| dark_sky_xd      | 00041 |
+|------------------+-------|
+
+***** s1.0
+
+|----------------+-------|
+| sky_xd_s1.0_hg | 00226 |
+| sky_xd_s1.0_hg | 00227 |
+| sky_xd_s1.0_hg | 00228 |
+| sky_xd_s1.0_hg | 00229 |
+| sky_xd_s1.0_hg | 00230 |
+| sky_xd_s1.0_hg | 00231 |
+| sky_xd_s1.0_hg | 00232 |
+| sky_xd_s1.0_hg | 00233 |
+| sky_xd_s1.0_hg | 00234 |
+| sky_xd_s1.0_hg | 00235 |
+|----------------+-------|
+
+**** LR
+***** s0.5
+|------------------+-------|
+| dark_sky_lr      | 00044 |
+| dark_sky_lr      | 00045 |
+| dark_sky_lr      | 00046 |
+| dark_sky_lr      | 00047 |
+| dark_sky_lr      | 00048 |
+| dark_sky_lr      | 00049 |
+| dark_sky_lr      | 00050 |
+| dark_sky_lr      | 00051 |
+| dark_sky_lr      | 00052 |
+| dark_sky_lr      | 00053 |
+| dark_sky_lr      | 00054 |
+| dark_sky_lr      | 00055 |
+| dark_sky_lr      | 00056 |
+| dark_sky_lr      | 00057 |
+| dark_sky_lr      | 00058 |
+|------------------+-------|
+
+***** s1.0
+|----------------+-------|
+| sky_lr_s1.0_hg | 00221 |
+| sky_lr_s1.0_hg | 00222 |
+| sky_lr_s1.0_hg | 00223 |
+| sky_lr_s1.0_hg | 00224 |
+| sky_lr_s1.0_hg | 00225 |
+| sky_lr_s1.0_hg | 00248 |
+| sky_lr_s1.0_hg | 00249 |
+| sky_lr_s1.0_hg | 00250 |
+| sky_lr_s1.0_hg | 00251 |
+| sky_lr_s1.0_hg | 00252 |
+| sky_lr_s1.0_hg | 00253 |
+| sky_lr_s1.0_hg | 00254 |
+| sky_lr_s1.0_hg | 00255 |
+| sky_lr_s1.0_hg | 00256 |
+| sky_lr_s1.0_hg | 00257 |
+| sky_lr_s1.0_hg | 00258 |
+| sky_lr_s1.0_hg | 00259 |
+| sky_lr_s1.0_hg | 00260 |
+|----------------+-------|
+
+
+
+* Test files
+|-----------------------------+-------|
+| test_argon_lamp_lr_20s      | 00059 |
+| test_argon_lamp_lr_20s      | 00060 |
+| test_argon_lr_s0.5_hg       | 00151 |
+| test_argon_lr_s1.0_hg       | 00212 |
+| test_argon_xd_s0.5_hg       | 00164 |
+| test_argon_xd_s0.5_hg       | 00165 |
+| test_continuum1_lr_s1.0_hg  | 00261 |
+| test_continuum2_lr_s1.0_hg  | 00262 |
+| test_continuum2_lr_s1.0_hg  | 00263 |
+| test_continuum2_xd_s4.0_hg  | 00297 |
+| test_continuum2_xd_s4.0_hg  | 00298 |
+| test_continuum2_xd_s4.0_hg  | 00299 |
+| test_continuum2_xd_s4.0_hg  | 00300 |
+| test_continuum2_xd_s4.0_hg  | 00301 |
+| test_continuum2_xd_s4.0_hg  | 00302 |
+| test_continuum2_xd_s4.0_hg  | 00303 |
+| test_continuum2_xd_s4.0_hg  | 00304 |
+| test_continuum2_xd_s4.0_hg  | 00305 |
+| test_continuum2_xd_s4.0_hg  | 00306 |
+| test_continuum2_xd_s4.0_hg  | 00307 |
+| test_cont_lamp_xd_30s       | 00022 |
+| test_dark_sky_lr            | 00042 |
+| test_dark_sky_lr            | 00043 |
+| test_hd37725_ks_d1_20s      | 00080 |
+| test_hd37725_ks_d1_20s      | 00081 |
+| test_hd37725_ks_d1_20s      | 00082 |
+| test_hd37725_ks_d1_20s      | 00083 |
+| test_hd37725_ks_d1_20s      | 00084 |
+| test_hd37725_ks_d1_20s      | 00085 |
+| test_hd37725_ks_d1_20s      | 00086 |
+| test_hd37725_ks_d1_20s      | 00087 |
+| test_hd37725_ks_d1_20s      | 00088 |
+| test_hd37725_ks_d1_20s      | 00089 |
+| test_hd37725_ks_d1_20s      | 00090 |
+| test_hd37725_ks_d1_20s      | 00091 |
+| test_hd37725_ks_d1_20s      | 00092 |
+| test_hd37725_ks_d1_20s      | 00093 |
+| test_hd37725_ks_d1_s2.0_20s | 00094 |
+| test_hd37725_ks_d1_s4.0_20s | 00095 |
+| test_hd37725_ks_d1_s4.0_20s | 00096 |
+| test_hd37725_ks_d1_s4.0_20s | 00097 |
+| test_hd37725_ks_d1_s4.0_20s | 00098 |
+| test_hd37725_xd_s0.5_hg     | 00114 |
+| test_hd37725_xd_s0.5_hg     | 00115 |
+| test_hd37725_xd_s0.5_hg     | 00116 |
+| test_hip14815_ks_d1_20s     | 00122 |
+| test_hip41815_ks_d1_20s     | 00123 |
+| test_hip41815_ks_d1_20s     | 00124 |
+| test_hip41815_ks_d1_20s     | 00125 |
+| test_hip41815_ks_d1_20s     | 00126 |
+| test_hip41815_ks_d1_20s     | 00127 |
+| test_hip41815_ks_d1_20s     | 00128 |
+| test_hip41815_ks_d1_20s     | 00129 |
+| test_hip41815_ks_d1_20s     | 00130 |
+| test_hip41815_ks_d1_20s     | 00131 |
+| test_hip41815_ks_d1_20s     | 00132 |
+| test_hip41815_ks_d1_20s     | 00133 |
+| test_hip41815_ks_d1_20s     | 00134 |
+| test_hip41815_ks_d1_20s     | 00135 |
+| test_hip41815_lr_s0.5_hg    | 00143 |
+| test_hip41815_lr_s0.5_hg    | 00144 |
+| test_hip41815_lr_s0.5_hg    | 00145 |
+| test_hip41815_lr_s1.0_hg    | 00205 |
+| test_hip41815_lr_s1.0_hg    | 00206 |
+| test_hip41815_s0.5_hg       | 00175 |
+| test_hip41815_s0.5_hg       | 00176 |
+| test_hip41815_s0.5_hg       | 00177 |
+| test_hip41815_s0.5_hg       | 00178 |
+| test_hip41815_s0.5_hg       | 00179 |
+| test_hip41815_xd_s0.5_hg    | 00169 |
+| test_hip41815_xd_s0.5_hg    | 00170 |
+| test_hip41815_xd_s0.5_hg    | 00171 |
+| test_hip41815_xd_s0.5_hg    | 00172 |
+| test_hip41815_xd_s1.0_hg    | 00201 |
+| test_neon_lr_25s            | 00072 |
+| test_neon_lr_30s            | 00070 |
+| test_neon_lr_30s            | 00071 |
+| test_neon_lr_s0.5_hg        | 00155 |
+| test_neon_lr_s1.0_hg        | 00216 |
+| test_neon_lr_s1.0_hg        | 00217 |
+| test_neon_xd_s0.5_hg        | 00189 |
+| test_neon_xd_s0.5_hg        | 00190 |
+| test_neon_xd_s1.0_hg        | 00194 |
+|-----------------------------+-------|

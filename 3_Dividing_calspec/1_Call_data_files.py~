@@ -1,0 +1,54 @@
+
+from astropy.table import Table
+from astropy.io import fits
+from astropy import units as u
+from synphot import units
+from scipy import interpolate
+import matplotlib.pyplot as plt
+import numpy as np
+import os
+
+
+def convert_flam_to_photon(wave, flux):
+    converted_unit = units.convert_flux(wave, flux, u.count)
+    return converted_unit
+
+
+def convert_photon_to_flam(wave, flux):
+    converted_unit = units.convert_flux(wave, flux, units.FLAM)
+    return converted_unit
+
+
+def tanspec_data(q=0):
+    file_path = '/home/varghese/Desktop/DP2_TANSPEC/\
+Data/Output_spectra/hd37725/s0.5/tanspec_slopes'
+    flux = fits.getdata(os.path.join(file_path,
+                                     'op_hd37725_grating1_A.ms.wlc.fits')
+                        )
+    order = flux[q]
+    wavelength = np.load(
+        os.path.join(file_path,
+                     'op_hd37725_grating1_A_combarc.OutputWavlFile{}.npy'
+                     .format(q))
+    )
+    return order, wavelength
+
+
+calspec_data = Table.read(
+    '/home/varghese/Desktop/DP2_TANSPEC/Calspec_data/hd37725_mod_004.fits'
+)
+
+calspec_wl = np.array(calspec_data['WAVELENGTH'])
+calspec_flux = np.array(calspec_data['FLUX'])
+interpolation = interpolate.interp1d(calspec_wl, calspec_flux)
+
+fig, axs = plt.subplots(5, 2, figsize=(16, 9))
+for order in range(0, 10, 1):
+    tanspec_flux, wavelength = tanspec_data(order)
+    tanspec_flux = convert_photon_to_flam(wavelength, tanspec_flux)
+    cal_orders = interpolation(wavelength)
+#    axs[order//2][order % 2].plot(wavelength, tanspec_flux)
+    axs[order//2][order % 2].plot(wavelength, cal_orders)
+plt.savefig('tan_cal_spec.png')
+
+# Code ends here
