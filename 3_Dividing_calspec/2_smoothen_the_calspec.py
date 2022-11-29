@@ -1,4 +1,5 @@
 
+from matplotlib.backends.backend_pdf import PdfPages
 from astropy.table import Table
 from astropy.io import fits
 from scipy import interpolate
@@ -34,20 +35,31 @@ calspec_data = Table.read(
 
 calspec_wl = np.array(calspec_data['WAVELENGTH'])
 calspec_flux = np.array(calspec_data['FLUX'])
-smoothed_flux = smooth(calspec_flux, 10000)
+smoothed_flux = smooth(calspec_flux, 2048)
 interpolation = interpolate.interp1d(calspec_wl, smoothed_flux)
 
-fig, axs = plt.subplots(5, 2, figsize=(16, 9))
+pdfplots = PdfPages('Images/calspec_ratio.pdf')
 for order in range(0, 10, 1):
+    fig = plt.figure(figsize=(16, 9))
+    fig.suptitle('Order {}'.format(order))
+    gs = fig.add_gridspec(3, hspace=0)
+    axs = gs.subplots(sharex=True)
     tanspec_flux, wavelength = tanspec_data(order)
     cal_orders = interpolation(wavelength)
     smoothed_tanspec = smooth(tanspec_flux, 2048)
     flux_ratio = cal_orders / smoothed_tanspec
-    # axs[order//2][order % 2].plot(smoothed_tanspec)
-    # axs[order//2][order % 2].plot(wavelength, cal_orders)
-    axs[order//2][order % 2].plot(wavelength, flux_ratio)
-    axs[order//2][order % 2].set_title('order {}'.format(order))
+    axs[0].plot(wavelength, cal_orders, label='calspec')
+    axs[1].plot(wavelength, tanspec_flux, color='red', label='tanspec')
+    axs[1].plot(wavelength, smoothed_tanspec, color='black', label='smoothend')
+    axs[2].plot(wavelength, flux_ratio, color='green', label='ratio')
     np.save('smoothed_ratio_{}.npy'.format(order), flux_ratio)
-plt.savefig('smoothed_ratio.png')
+    axs[0].legend()
+    axs[1].legend()
+    axs[2].legend()
+    plt.xlabel('$\lambda \AA$')
+    plt.ylabel('Flux')
+    pdfplots.savefig()
+pdfplots.close()
+
 
 # Code ends here
