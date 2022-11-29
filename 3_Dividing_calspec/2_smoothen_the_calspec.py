@@ -34,19 +34,20 @@ calspec_data = Table.read(
 
 calspec_wl = np.array(calspec_data['WAVELENGTH'])
 calspec_flux = np.array(calspec_data['FLUX'])
-smoothed_flux = smooth(calspec_flux, 19)
+smoothed_flux = smooth(calspec_flux, 10000)
 interpolation = interpolate.interp1d(calspec_wl, smoothed_flux)
 
 fig, axs = plt.subplots(5, 2, figsize=(16, 9))
 for order in range(0, 10, 1):
     tanspec_flux, wavelength = tanspec_data(order)
     cal_orders = interpolation(wavelength)
-    flux_ratio = cal_orders / tanspec_flux
-    # axs[order//2][order % 2].plot(wavelength, tanspec_flux)
+    smoothed_tanspec = smooth(tanspec_flux, 2048)
+    flux_ratio = cal_orders / smoothed_tanspec
+    # axs[order//2][order % 2].plot(smoothed_tanspec)
     # axs[order//2][order % 2].plot(wavelength, cal_orders)
     axs[order//2][order % 2].plot(wavelength, flux_ratio)
     axs[order//2][order % 2].set_title('order {}'.format(order))
     np.save('smoothed_ratio_{}.npy'.format(order), flux_ratio)
-plt.savefig('smoothed_flux_ratio.png')
+plt.savefig('smoothed_ratio.png')
 
 # Code ends here
