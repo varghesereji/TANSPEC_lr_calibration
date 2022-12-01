@@ -1,0 +1,11 @@
+# This code is to fit the spectra of the star with a black body curve.
+
+from astropy.modeling import models
+from astropy import units as u
+import matplotlib.pyplot as plt
+
+bb_spactra = models.BlackBody(temperature=5000*u.K)
+
+plt.figure()
+plt.plot(bb_spectra)
+plt.savefig('test_figure_1.png')
