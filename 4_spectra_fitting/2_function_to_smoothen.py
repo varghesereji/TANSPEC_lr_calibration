@@ -13,15 +13,14 @@ import os
 def tanspec_data(q=0):
     file_path = '/home/varghese/Desktop/DP2_TANSPEC/\
 Data/Output_spectra/hd37725/s0.5/tanspec_slopes'
-    flux = fits.getdata(os.path.join(file_path,
-                                     'op_hd37725_grating1_A.ms.wlc.fits')
-                        )
+    flux = fits.getdata(os.path.join(
+        file_path, 'op_hd37725_grating1_A.ms.wlc.final.fits'),
+        ext=0)
     order = flux[q]
-    wavelength = np.load(
+    wl = fits.getdata(
         os.path.join(file_path,
-                     'op_hd37725_grating1_A_combarc.OutputWavlFile{}.npy'
-                     .format(q))
-    )
+                     'op_hd37725_grating1_A.ms.wlc.final.fits'), ext=1)
+    wavelength = wl[q]
     return order, wavelength
 
 

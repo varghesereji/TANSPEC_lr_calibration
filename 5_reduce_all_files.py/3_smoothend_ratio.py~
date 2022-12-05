@@ -8,7 +8,7 @@ from astropy.io import fits
 import numpy as np
 import matplotlib.pyplot as plt
 import os
-
+import re
 
 def smoothening_rank(flux, rank=-1, size=20):
     '''
@@ -40,16 +40,47 @@ def smoothening_median(flux, size=20):
     return smoothend_flux
 
 
-def tanspec_data(q=0):
-    file_path = '/home/varghese/Desktop/DP2_TANSPEC/\
-Data/Output_spectra/hd37725/s0.5/tanspec_slopes'
+def find_file(dirc):
+    '''
+    Parameters
+    --------------------------------
+    dirc: path to directory
+    ================================
+    filename: Name of the file
+    --------------------------------
+    '''
+    files_list = os.listdir(dirc)
+    for filename in files_list:
+        match = re.search("\.final\.fits", filename)
+        if match:
+            print(filename)
+            return filename
+
+    
+def tanspec_data(star='hd37725', slit='s0.5', q=0,):
+    '''
+    Parameters
+    --------------------------------
+    star: string. Name of star, lower case.
+    slit: string. Name of slit.
+    q: order of spectra starting from 0
+    ================================
+    Return
+    --------------------------------
+    order: Spectra from reduced tanspec data for given order
+    wavelength: Array of wavelength.
+    '''
+    data_dir_path = '/home/varghese/Desktop/DP2_TANSPEC/\
+Data/Output_spectra'
+    file_path = os.path.join(data_dir_path, star, slit, 'tanspec_slopes')
+    data_file = find_file(file_path)
     flux = fits.getdata(os.path.join(
-        file_path, 'op_hd37725_grating1_A.ms.wlc.final.fits'),
+        file_path, data_file),
         ext=0)
     order = flux[q]
     wl = fits.getdata(
         os.path.join(file_path,
-                     'op_hd37725_grating1_A.ms.wlc.final.fits'), ext=1)
+                     data_file), ext=1)
     wavelength = wl[q]
     return order, wavelength
 
@@ -65,14 +96,14 @@ smoothend_flux = smoothening_rank(calspec_flux)
 interpolation_smoothed = interpolate.interp1d(calspec_wl, smoothend_flux)
 interpolation_nsm = interpolate.interp1d(calspec_wl, calspec_flux)
 
-pdfplots = PdfPages('Images/test_images.pdf')
+pdfplots = PdfPages('test_images.pdf')
 
 for order in range(0, 10, 1):
     fig = plt.figure(figsize=(16, 9))
     fig.suptitle('Order {}'.format(order))
     gs = fig.add_gridspec(5, hspace=0)
     axs = gs.subplots(sharex=True)
-    tanspec_flux, wavelength = tanspec_data(order)
+    tanspec_flux, wavelength = tanspec_data(q=order)
     cal_orders_nsm = interpolation_nsm(wavelength)
     cal_orders_sm = interpolation_smoothed(wavelength)
     tanspec_sm = smoothening_median(tanspec_flux)
@@ -86,7 +117,7 @@ for order in range(0, 10, 1):
     plt.xlabel('$\lambda \AA$')
     plt.ylabel('ratio')
     pdfplots.savefig()
-    np.save('ratio_files/smoothed_ratio_{}.npy'.format(order), clipped_ratio)
+    #np.save('ratio_files/smoothed_ratio_{}.npy'.format(order), clipped_ratio)
 pdfplots.close()
 
 
