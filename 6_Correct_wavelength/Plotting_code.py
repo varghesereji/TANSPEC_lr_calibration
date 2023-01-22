@@ -1,0 +1,44 @@
+# This code is to plot the data files for different slits and orders
+
+from matplotlib.backends.backend_pdf import PdfPages
+import numpy as np
+import matplotlib.pyplot as plt
+import os
+
+
+star = 'hd37725'
+slit = 's0.5'
+path = '/home/varghese/Desktop/DP2_TANSPEC/\
+Codes/6_Correct_wavelength/Data_Files'
+
+hydrogen_lines = np.load(os.path.join(path, 'hydrogen_lines.npy'))
+
+pdfplots = PdfPages('Images/compare_with_calspec_{}.pdf'.format(slit))
+
+for order in range(0, 10, 1):
+    cal_orders = np.load(
+        os.path.join(path, 'cal_orders_{}_{}.npy'.format(order, slit)))
+    corrected_flux = np.load(
+        os.path.join(path, 'corrected_flux_{}_{}.npy'.format(order, slit)))
+    wavelength = np.load(
+        os.path.join(path, 'wavelength_{}_{}.npy'.format(order, slit)))
+    print('flux file', os.path.join(
+        path, 'corrected_flux_{}_{}.npy'.format(order, slit)))
+    fig = plt.figure(figsize=(16, 4))
+    fig.suptitle('{0} Order {1}'.format(star, order))
+    plt.plot(wavelength, cal_orders, color='green', label='calspec')
+    plt.plot(wavelength,
+             corrected_flux, color='red', label='calibrated tanspec')
+    for wl in hydrogen_lines:
+        plt.axvline(x=wl, color='k', linestyle='--')
+    plt.legend()
+    plt.ylim(min(cal_orders), max(cal_orders))
+    plt.xlim(min(wavelength), max(wavelength))
+
+    plt.xlabel('$\lambda \AA$')
+    plt.ylabel('Flux')
+ #   plt.show()
+    pdfplots.savefig()
+pdfplots.close()
+
+# Code end.

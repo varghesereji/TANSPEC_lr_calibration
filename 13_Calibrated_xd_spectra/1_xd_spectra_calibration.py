@@ -1,0 +1,131 @@
+from matplotlib.backends.backend_pdf import PdfPages
+import numpy as np
+from scipy import interpolate
+import matplotlib.pyplot as plt
+from astropy.io import fits
+from scipy.interpolate import interp1d
+from astropy.table import Table
+import os
+import re
+
+
+def find_file(dirc):
+    '''
+    Parameters
+    --------------------------------
+    dirc: path to directory
+    ================================
+    filename: Name of the file
+    --------------------------------
+    '''
+    files_list = os.listdir(dirc)
+    for filename in files_list:
+        match = re.search("\.final\.fits", filename)
+        if match:
+            return filename
+
+
+def tanspec_data(star='hd37725', slit='s0.5', q=0,):
+    '''
+    Parameters
+    --------------------------------
+    star: string. Name of star, lower case.
+    slit: string. Name of slit.
+    q: order of spectra starting from 0
+    ================================
+    Return
+    --------------------------------
+    order: Spectra from reduced tanspec data for given order
+    wavelength: Array of wavelength.
+    '''
+    data_dir_path = '/home/varghese/Desktop/DP2_TANSPEC/\
+Data/Output_spectra'
+    file_path = os.path.join(data_dir_path, star, slit, 'tanspec_slopes')
+    data_file = find_file(file_path)
+    flux = fits.getdata(os.path.join(
+        file_path, data_file),
+        ext=0)
+    order = flux[q]
+    wl = fits.getdata(
+        os.path.join(file_path,
+                     data_file), ext=1)
+    wavelength = wl[q]
+    return order, wavelength
+
+
+def calspec_data(wavelength, star='hd37725'):
+    '''
+    Parameters
+    --------------------------------
+    wavelength: array or float, values of wavelength that you wanted the flux
+    star: calspec file of which star
+    ================================
+    Return
+    --------------------------------
+    interpolated_flux: Interpolated flux data.
+    '''
+    path = '/home/varghese/Desktop/DP2_TANSPEC/Calspec_data/'
+    file_name = star + '_mod_004.fits'
+    data_file = Table.read(os.path.join(path, file_name))
+    calspec_wl = np.array(data_file['WAVELENGTH'])
+    calspec_flux = np.array(data_file['FLUX'])
+    interpolated = interpolate.interp1d(calspec_wl, calspec_flux)
+    interpolated_flux = interpolated(wavelength)
+    return interpolated_flux
+
+
+def interpolate_pixels(pixels, wavelength, wl):
+    interp = interp1d(wavelength, pixels, fill_value='extrapolate')
+    wl_position = interp(wl)
+    return wl_position
+
+
+project_path = '/home/varghese/Desktop/DP2_TANSPEC'
+response_path = os.path.join(project_path, 'Data/Instrument_response/smoothed')
+mask = np.load(os.path.join(response_path, 'Trim_spectrum.npy'))
+
+file = open('atmabs.txt', 'r')
+telluric_lines = []
+for line in file:
+    stripped_line = line.strip()
+    telluric_lines.append(float(stripped_line))
+
+# star = 'hip41815'
+# slit = 's1.0'
+# calspec = 'hd205905'
+
+star = 'hd37725'
+slit = 's4.0'
+calspec = 'hd37725'
+
+ratio_file = np.load(os.path.join(response_path,
+                                  'Normalized_mean_response_curves.npy'))
+pdfplots = PdfPages('ratio_manipulate_Flux_comparison_{0}_{1}.pdf'.format(star,
+                                                                          slit)
+                    )
+
+for order, ratio in enumerate(ratio_file):
+    tanspec_flux, wavelength = tanspec_data(star=star, slit=slit, q=order)
+    mask_portion = mask[order]
+    pixels_actual = np.arange(0, 2048, 1)
+    fig, ax = plt.subplots(2, figsize=(16, 9))
+    pixels = pixels_actual/1024 - 1
+    # for wl in telluric_lines:
+    #     ax1.axvline(x=wl, color='black', linestyle=':', alpha=0.2)
+    master_mask = mask[order]
+    calib_tanspec = tanspec_flux / (ratio)
+    ax[0].plot(wavelength[mask_portion], ratio[mask_portion])
+    ax[1].plot(wavelength[mask_portion], calib_tanspec[mask_portion],
+               color='red')
+    cal_orders = calspec_data(wavelength, star=calspec)
+    cal_orders = cal_orders * np.median(calib_tanspec[mask_portion]) / np.median(cal_orders)
+    ax[1].plot(wavelength[mask_portion], cal_orders[mask_portion],
+               color='green')
+    ax[1].set_ylim(min(cal_orders), max(cal_orders))
+    ax[1].set_xlim(min(wavelength), max(wavelength))
+    pdfplots.savefig()
+    print(min(wavelength), max(wavelength))
+pdfplots.close()
+
+
+# End

@@ -1,0 +1,36 @@
+# This code is to fit the ratio files with six degree polynonial
+
+from scipy.special import legendre
+from scipy.optimize import curve_fit
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+def generate_legendre(n):
+    return legendre(n)
+
+
+def legendre_function(x, n, a):
+    coeffs = legendre(n)
+    func = None
+    for deg, coeff in enumerate(np.flip(coeffs)):
+        if func is None:
+            func = x**deg * coeff
+        else:
+            func += x**deg * coeff
+    return a*func
+
+
+def polynomial(x, a0, a1, a2, a3, a4, a5, a6):
+    function = legendre_function(x, 0, a0) + legendre_function(x, 1, a1)
+    + legendre_function(x, 2, a2) + legendre_function(x, 3, a3)
+    + legendre_function(x, 4, a4) + legendre_function(x, 5, a5)
+    + legendre_function(x, 6, a6)
+    return function
+
+
+ratio_file = np.load('ratio_files/flux_cal_ratio_hd37725_s4.0.npy')
+pixels = np.linspace(-1, 1, 2048)
+for order, ratio in enumerate(ratio_file):
+    params, sigma = curve_fit(polynomial, pixels, ratio)
+    a0, a1, a2, a3, a4, a5, a6 = params

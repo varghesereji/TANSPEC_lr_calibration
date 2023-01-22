@@ -1,0 +1,161 @@
+# This code is to fit the ratio files with six degree polynonial
+
+from matplotlib.backends.backend_pdf import PdfPages
+import numpy as np
+from scipy import integrate
+import matplotlib.pyplot as plt
+from astropy.io import fits
+from scipy.interpolate import interp1d
+import os
+import re
+
+
+def find_file(dirc):
+    '''
+    Parameters
+    --------------------------------
+    dirc: path to directory
+    ================================
+    filename: Name of the file
+    --------------------------------
+    '''
+    files_list = os.listdir(dirc)
+    for filename in files_list:
+        match = re.search("\.final\.fits", filename)
+        if match:
+            return filename
+
+
+def tanspec_data(star='hd37725', slit='s0.5', q=0,):
+    '''
+    Parameters
+    --------------------------------
+    star: string. Name of star, lower case.
+    slit: string. Name of slit.
+    q: order of spectra starting from 0
+    ================================
+    Return
+    --------------------------------
+    order: Spectra from reduced tanspec data for given order
+    wavelength: Array of wavelength.
+    '''
+    data_dir_path = '/home/varghese/Desktop/DP2_TANSPEC/\
+Data/Output_spectra'
+    file_path = os.path.join(data_dir_path, star, slit, 'tanspec_slopes')
+    data_file = find_file(file_path)
+    flux = fits.getdata(os.path.join(
+        file_path, data_file),
+        ext=0)
+    order = flux[q]
+    wl = fits.getdata(
+        os.path.join(file_path,
+                     data_file), ext=1)
+    wavelength = wl[q]
+    return order, wavelength
+
+
+def mask_dictionary(pixels):
+    masks = {
+        1:  {1: (pixels < 1150) & (pixels > 725),
+             2: (pixels > 1270) & (pixels < 1600),
+             3: (pixels > 1750) & (pixels < 2048)},
+        2: {1: (pixels < 850) & (pixels > 500),
+            2: (pixels > 1080) & (pixels < 2048)},
+        3: {1: (pixels < 1750) & (pixels > 250)},
+        4: {1: (pixels < 1060) & (pixels > -1),
+            2: (pixels > 1130) & (pixels < 2048)},
+        5: {1: (pixels < 2048) & (pixels > -1)},
+        6: {1: (pixels < 765) & (pixels > -1),
+            2: (pixels > 1100) & (pixels < 2048)},
+        7: {1: (pixels < 820) & (pixels > 0),  # perfect
+            2: (pixels > 1225) & (pixels < 2048)},
+        8: {1: (pixels > 0) & (pixels < 600),  # perfect
+            2: (pixels > 760) & (pixels < 860),
+            3: (pixels > 1700) & (pixels < 2048)},
+        9: {1: (pixels < 1240) & (pixels > 0),  # perfect
+            2: (pixels > 1990) & (pixels < 2048)},
+        10: {1: (pixels < 355) & (pixels > -1),
+             2: (pixels > 600) & (pixels < 2048)}
+        }
+    return masks
+
+
+def ordinary_polynomial(x, a0, a1, a2, a3, a4, a5, a6):
+    return a6 + a5*x + a4*x**2 + a3*x**3 + a2*x**4 + a1*x**5 + a0*x**6
+
+
+def interpolate_pixels(pixels, wavelength, wl):
+    interp = interp1d(wavelength, pixels, fill_value='extrapolate')
+    wl_position = interp(wl)
+    return wl_position
+
+
+def smooth(y, box_pts):
+    box = np.ones(box_pts) / box_pts
+    y_smooth = np.convolve(y, box, mode='same')
+    return y_smooth
+
+
+pdfplots = PdfPages('test_polyfit.pdf')
+
+ratio_file = np.load('ratio_files/flux_cal_ratio_hd37725_s4.0.npy')
+
+file = open('atmabs.txt', 'r')
+telluric_lines = []
+for line in file:
+    stripped_line = line.strip()
+    telluric_lines.append(float(stripped_line))
+
+star = 'hd37725'
+slit = 's4.0'
+# telluric_lines = np.load('tellutic_lines.npy')
+for order, ratio in enumerate(ratio_file):
+    print(order)
+    tanspec_flux, wavelength = tanspec_data(star=star, slit=slit, q=order)
+    pixels_actual = np.arange(0, 2048, 1)
+    mask_dict = mask_dictionary(pixels_actual)
+    plt.figure(figsize=(16, 9))
+    pixels = pixels_actual/1024 - 1
+    for wl in telluric_lines:
+        tl_position = interpolate_pixels(pixels_actual, wavelength, wl)
+        plt.axvline(x=tl_position, color='black', linestyle=':', alpha=0.2)
+    master_mask = np.sum(list(mask_dict[order+1].values()), axis=0,
+                         dtype=np.bool)
+    diff_mask = np.diff(master_mask)
+    positions = list(np.where(diff_mask)[0])
+    mask_positions = list(np.where(~master_mask)[0])
+    for x_pos in mask_positions:
+        plt.axvline(x=x_pos, color='yellow', linestyle='-', alpha=0.1)
+    for mark in positions:
+        plt.text(mark, 0, str(mark+1), fontsize=15)
+    plt.plot(pixels_actual, ratio, '-',)
+    if order == 0:
+        derivative = np.gradient(ratio)
+        smoothed_derivative = smooth(derivative, 45)
+        integral = integrate.cumtrapz(derivative, np.arange(0, 2048, 1),
+                                      initial=0)
+        correction_factor = np.mean(ratio - integral)
+        smoothed_integral = integrate.cumtrapz(
+            smoothed_derivative, np.arange(0, 2048, 1),
+            initial=0)
+        print(smoothed_integral)
+        plt.plot(pixels_actual, smoothed_integral + correction_factor, '--',
+                 color='green')
+        np.save( '/home/varghese/Desktop/DP2_TANSPEC/Codes/11_response_function_iteration/instrum_resp/Instrument_resp_0.npy',
+                 smoothed_integral
+        )
+        np.save('/home/varghese/Desktop/DP2_TANSPEC/Codes/11_response_function_iteration/instrum_resp/Mask_0.npy',
+                master_mask)
+    else:
+        polyfit = np.polyfit(pixels[master_mask],
+                             ratio[master_mask], 6)
+        fitted = np.poly1d(polyfit)
+        plt.plot(pixels_actual, fitted(pixels), '--', color='green')
+    plt.xlabel('pixels')
+    plt.title('Order {0}, page {1}'.format(12 - order, order+1))
+    plt.plot(pixels_actual[master_mask], ratio[master_mask], color='red')
+    plt.ylim(-1e14, max(ratio)+1000)
+    plt.xlim(0, 2048)
+    pdfplots.savefig()
+
+pdfplots.close()

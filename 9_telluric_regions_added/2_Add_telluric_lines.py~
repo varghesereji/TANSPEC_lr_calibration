@@ -1,0 +1,122 @@
+# This code is to fit the ratio files with six degree polynonial
+
+from matplotlib.backends.backend_pdf import PdfPages
+import numpy as np
+import matplotlib.pyplot as plt
+from astropy.io import fits
+import os
+import re
+
+
+def find_file(dirc):
+    '''
+    Parameters
+    --------------------------------
+    dirc: path to directory
+    ================================
+    filename: Name of the file
+    --------------------------------
+    '''
+    files_list = os.listdir(dirc)
+    for filename in files_list:
+        match = re.search("\.final\.fits", filename)
+        if match:
+            return filename
+
+
+def tanspec_data(star='hd37725', slit='s0.5', q=0,):
+    '''
+    Parameters
+    --------------------------------
+    star: string. Name of star, lower case.
+    slit: string. Name of slit.
+    q: order of spectra starting from 0
+    ================================
+    Return
+    --------------------------------
+    order: Spectra from reduced tanspec data for given order
+    wavelength: Array of wavelength.
+    '''
+    data_dir_path = '/home/varghese/Desktop/DP2_TANSPEC/\
+Data/Output_spectra'
+    file_path = os.path.join(data_dir_path, star, slit, 'tanspec_slopes')
+    data_file = find_file(file_path)
+    flux = fits.getdata(os.path.join(
+        file_path, data_file),
+        ext=0)
+    order = flux[q]
+    wl = fits.getdata(
+        os.path.join(file_path,
+                     data_file), ext=1)
+    wavelength = wl[q]
+    return order, wavelength
+
+
+def mask_dictionary(pixels):
+    masks = {
+        0: {1: (pixels > -1)},  # {1: (pixels < 930) & (pixels > -1),
+        # 2: (pixels > 1750) & (pixels < 2048)},
+        1: {1: (pixels < 850) & (pixels > 500),
+            2: (pixels > 1080) & (pixels < 2048)},
+        2: {1: (pixels < 2048) & (pixels > -1)},
+        3: {1: (pixels < 1060) & (pixels > -1),
+            2: (pixels > 1130) & (pixels < 2048)},
+        4: {1: (pixels < 2048) & (pixels > -1)},
+        5: {1: (pixels < 750) & (pixels > -1),
+            2: (pixels > 1100) & (pixels < 2048)},
+        6: {1: (pixels < 820) & (pixels > 0),
+            2: (pixels > 1225) & (pixels < 2048)},
+        7: {1: (pixels > 0) & (pixels < 600),
+            2: (pixels > 760) & (pixels < 860),
+            3: (pixels > 1700) & (pixels < 2048)},
+        8: {1: (pixels < 1240) & (pixels > 0),
+            2: (pixels > 1990) & (pixels < 2048)},
+        9: {1: (pixels < 350) & (pixels > -1),
+            2: (pixels > 600) & (pixels < 2048)}
+        }
+    return masks
+
+
+def ordinary_polynomial(x, a0, a1, a2, a3, a4, a5, a6):
+    return a6 + a5*x + a4*x**2 + a3*x**3 + a2*x**4 + a1*x**5 + a0*x**6
+
+
+pdfplots = PdfPages('test_polyfit.pdf')
+
+ratio_file = np.load('ratio_files/flux_cal_ratio_hd37725_s4.0.npy')
+
+file = open('atmabs.txt', 'r')
+telluric_lines = []
+for line in file:
+    stripped_line = line.strip()
+    telluric_lines.append(float(stripped_line))
+
+star = 'hd37725'
+slit = 's4.0'
+# telluric_lines = np.load('tellutic_lines.npy')
+for order, ratio in enumerate(ratio_file):
+    tanspec_flux, wavelength = tanspec_data(star=star, slit=slit, q=order)
+    pixels_actual = np.arange(0, 2048, 1)
+    mask_dict = mask_dictionary(pixels_actual)
+    fig = plt.figure(figsize=(16, 9))
+    pixels = pixels_actual/1024 - 1
+#    plt.plot(wavelength, ratio)
+    # print(mask_dict)
+    master_mask = np.sum(list(mask_dict[order].values()), axis=0,
+                         dtype=np.bool)
+    polyfit = np.polyfit(wavelength[master_mask],
+                         ratio[master_mask], 6)
+    # a0, a1, a2, a3, a4, a5, a6 = params
+    fitted = np.poly1d(polyfit)
+    plt.plot(wavelength[master_mask], ratio[master_mask])
+   # plt.plot(wavelength,
+    #         ordinary_polynomial(pixels,
+     #                            a0, a1, a2, a3, a4, a5, a6), '--')
+    _ = plt.plot(wavelength, ratio, '-', wavelength, fitted(pixels), '--')
+    for wl in telluric_lines:
+        plt.axvline(x=wl, color='blue', linestyle='--')
+
+    plt.ylim(-1e14, max(ratio)+1000)
+    plt.xlim(min(wavelength), max(wavelength))
+    pdfplots.savefig()
+pdfplots.close()

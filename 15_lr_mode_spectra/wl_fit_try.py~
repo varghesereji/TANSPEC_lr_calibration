@@ -1,0 +1,27 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+wl = np.array([25000,
+               15046,
+               15824,
+               16685,
+               17637,
+               25145])
+pixels = np.array([1536,
+                   1060,
+                   1081,
+                   1108,
+                   1120,
+                   1552])
+full_pixels = np.arange(0, 2048, 1)
+
+fitting = np.polyfit(pixels, wl, 3)
+curve = np.poly1d(fitting)
+fitted_wls = curve(full_pixels)
+print(fitted_wls)
+
+plt.figure()
+plt.plot(full_pixels, fitted_wls)
+plt.plot(pixels, wl, 'o')
+plt.show()

@@ -1,0 +1,25 @@
+# wl of xd to pixels of lr
+# comparing the lines in lr and xd mode
+
+wl	    pixels
+
+25000	    1536
+15046	    1060
+15824	    1081
+16685	    1108
+17637	    1120
+25145	    1552	    
+
+
+# from stellar telluric lines
+
+wl     pixels
+20531  1367
+20020  1349	
+19880  1343
+13410  1133
+11350  1085
+14700  1178
+6560   905
+9000   1013
+8849   982

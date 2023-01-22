@@ -1,0 +1,22 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import scipy.constants as const
+
+
+def bb_spectra(T, lam):
+    a = np.exp(
+        const.h * const.c / (lam * const.k * T)
+    ) - 1
+    b = 2 * const.h * (const.c)**2 / lam**5
+    bb_eq = b / a
+    return bb_eq
+
+
+wl = np.arange(21000, 26000, 0.1)
+wl_si = wl * 1e-10
+bb_spec = bb_spectra(300, wl_si)
+
+plt.figure(figsize=(16, 9))
+plt.plot(wl, bb_spec)
+plt.show()
+# End

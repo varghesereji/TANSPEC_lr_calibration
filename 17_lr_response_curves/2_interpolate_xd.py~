@@ -1,0 +1,34 @@
+from scipy.interpolate import interp1d
+import numpy as np
+import matplotlib.pyplot as plt
+from astropy.io import fits
+import os
+
+project = '/home/varghese/Desktop/DP2_TANSPEC'
+
+# lr mode spectra
+data_path = 'lr_background_reduction/spectrum_extraction/extracted_spectra'
+file_path = os.path.join(project, data_path, 'Ext_hd37725_lr_s0.5hg.fits')
+fitted_wavelength = np.load('wavelength_calibrated.npy')
+
+star = fits.getdata(file_path, ext=0)[0]
+sky = fits.getdata(file_path, ext=1)[0]
+
+star_sky_sbtr = star - sky
+mask = fitted_wavelength > 0
+
+lr_wavelength = np.load('wavelength_calibrated.npy')
+
+plt.figure(figsize=(16,9))
+plt.plot(fitted_wavelength[mask], star[mask])
+plt.plot(fitted_wavelength[mask], sky[mask])
+plt.plot(fitted_wavelength[mask], star_sky_sbtr[mask])
+
+for order in range(0, 10, 1):
+    data = np.load(
+        'xd_flux_wavelength/flux_wavelength_{}.npy'.format(order)
+    )
+    plt.plot(data[1], data[0])
+plt.show()
+
+# End

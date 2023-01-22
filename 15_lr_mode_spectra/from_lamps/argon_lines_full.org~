@@ -1,0 +1,270 @@
+
+<th scope="col" nowrap="nowrap">Intensity</th><td></td><td bgcolor="#000000"><img src="Strong%20Lines%20of%20Argon%20(%20Ar%20)_files/spacer.gif" alt="" width="1" height="1">|</td>
+<th scope="col" nowrap="nowrap">Air<br>Wavelength (Å)</th><td></td><td bgcolor="#000000"><img src="Strong%20Lines%20of%20Argon%20(%20Ar%20)_files/spacer.gif" alt="" width="1" height="1">|</td>
+<th scope="col" nowrap="nowrap">Spectrum</th><td></td><td bgcolor="#000000"><img src="Strong%20Lines%20of%20Argon%20(%20Ar%20)_files/spacer.gif" alt="" width="1" height="1">|</td>
+<th scope="col" nowrap="nowrap">Reference</th><td></td></tr></thead>
+<tbody><tr><td colspan="16" bgcolor="#000000"><img src="Strong%20Lines%20of%20Argon%20(%20Ar%20)_files/spacer.gif" alt="" width="1" height="1"></td></tr>
+<tr align="center">
+<td rowspan="1000">|</td><td rowspan="1000"></td><td rowspan="1000" bgcolor="#000000"><img src="Strong%20Lines%20of%20Argon%20(%20Ar%20)_files/spacer.gif" alt="" width="1" height="1"></td>
+<td rowspan="1000">|</td><td rowspan="1000"></td><td rowspan="1000" bgcolor="#000000"><img src="Strong%20Lines%20of%20Argon%20(%20Ar%20)_files/spacer.gif" alt="" width="1" height="1"></td>
+<td rowspan="1000">|</td><td rowspan="1000"></td><td rowspan="1000" bgcolor="#000000"><img src="Strong%20Lines%20of%20Argon%20(%20Ar%20)_files/spacer.gif" alt="" width="1" height="1"></td>
+<td rowspan="1000">|</td><td rowspan="1000"></td></tr>
+|2   |2420.456|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="2420.456"><!-- filler --></a></td></tr>
+|3   |2516.789|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="2516.789"><!-- filler --></a></td></tr>
+|3   |2534.709|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="2534.709"><!-- filler --></a></td></tr>
+|5   |2562.087|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="2562.087"><!-- filler --></a></td></tr>
+|8   |2891.612|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="2891.612"><!-- filler --></a></td></tr>
+|70   |2942.893|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="2942.893"><!-- filler --></a></td></tr>
+|30   |2979.050|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="2979.050"><!-- filler --></a></td></tr>
+|15   |3033.508|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3033.508"><!-- filler --></a></td></tr>
+|15   |3093.402|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3093.402"><!-- filler --></a></td></tr>
+|7   |3243.689|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3243.689"><!-- filler --></a></td></tr>
+|8   |3293.640|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3293.640"><!-- filler --></a></td></tr>
+|7   |3307.228|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3307.228"><!-- filler --></a></td></tr>
+|8   |3350.924|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3350.924"><!-- filler --></a></td></tr>
+|8   |3376.436|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3376.436"><!-- filler --></a></td></tr>
+|8   |3388.531|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3388.531"><!-- filler --></a></td></tr>
+|25   |3476.747|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3476.747"><!-- filler --></a></td></tr>
+|7   |3478.232|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3478.232"><!-- filler --></a></td></tr>
+|15   |3491.244|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3491.244"><!-- filler --></a></td></tr>
+|30   |3491.536|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3491.536"><!-- filler --></a></td></tr>
+|25   |3509.778|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3509.778"><!-- filler --></a></td></tr>
+|25   |3514.388|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3514.388"><!-- filler --></a></td></tr>
+|25   |3545.596|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3545.596"><!-- filler --></a></td></tr>
+|25   |3545.845|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3545.845"><!-- filler --></a></td></tr>
+|30   |3559.508|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3559.508"><!-- filler --></a></td></tr>
+|30   |3561.030|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3561.030"><!-- filler --></a></td></tr>
+|25   |3576.616|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3576.616"><!-- filler --></a></td></tr>
+|8   |3581.608|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3581.608"><!-- filler --></a></td></tr>
+|15   |3582.355|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3582.355"><!-- filler --></a></td></tr>
+|25   |3588.441|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3588.441"><!-- filler --></a></td></tr>
+|8   |3622.138|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3622.138"><!-- filler --></a></td></tr>
+|7   |3639.833|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3639.833"><!-- filler --></a></td></tr>
+|12   |3718.206|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3718.206"><!-- filler --></a></td></tr>
+|25   |3729.309|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3729.309"><!-- filler --></a></td></tr>
+|15   |3737.889|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3737.889"><!-- filler --></a></td></tr>
+|50   |3765.270|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3765.270"><!-- filler --></a></td></tr>
+|15   |3766.119|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3766.119"><!-- filler --></a></td></tr>
+|1   |3770.369|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3770.369"><!-- filler --></a></td></tr>
+|7   |3770.520|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3770.520"><!-- filler --></a></td></tr>
+|8   |3780.840|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3780.840"><!-- filler --></a></td></tr>
+|8   |3803.172|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3803.172"><!-- filler --></a></td></tr>
+|15   |3809.456|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3809.456"><!-- filler --></a></td></tr>
+|25   |3850.581|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3850.581"><!-- filler --></a></td></tr>
+|12   |3868.528|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3868.528"><!-- filler --></a></td></tr>
+|12   |3925.719|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3925.719"><!-- filler --></a></td></tr>
+|15   |3928.623|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3928.623"><!-- filler --></a></td></tr>
+|8   |3932.547|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3932.547"><!-- filler --></a></td></tr>
+|25   |3946.097|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3946.097"><!-- filler --></a></td></tr>
+|1   |3948.979|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3948.979"><!-- filler --></a></td></tr>
+|7   |3979.356|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3979.356"><!-- filler --></a></td></tr>
+|12   |3994.792|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="3994.792"><!-- filler --></a></td></tr>
+|15   |4013.857|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4013.857"><!-- filler --></a></td></tr>
+|15   |4033.809|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4033.809"><!-- filler --></a></td></tr>
+|7   |4035.460|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4035.460"><!-- filler --></a></td></tr>
+|50   |4042.894|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4042.894"><!-- filler --></a></td></tr>
+|1   |4044.418|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4044.418"><!-- filler --></a></td></tr>
+|30   |4052.921|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4052.921"><!-- filler --></a></td></tr>
+|70   |4072.005|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4072.005"><!-- filler --></a></td></tr>
+|25   |4072.385|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4072.385"><!-- filler --></a></td></tr>
+|8   |4076.628|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4076.628"><!-- filler --></a></td></tr>
+|12   |4079.574|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4079.574"><!-- filler --></a></td></tr>
+|8   |4082.387|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4082.387"><!-- filler --></a></td></tr>
+|50   |4103.912|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4103.912"><!-- filler --></a></td></tr>
+|100   |4131.724|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4131.724"><!-- filler --></a></td></tr>
+|12   |4156.086|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4156.086"><!-- filler --></a></td></tr>
+|11   |4158.590|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4158.590"><!-- filler --></a></td></tr>
+|1   |4164.180|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4164.180"><!-- filler --></a></td></tr>
+|12   |4179.297|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4179.297"><!-- filler --></a></td></tr>
+|1   |4181.884|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4181.884"><!-- filler --></a></td></tr>
+|3   |4190.713|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4190.713"><!-- filler --></a></td></tr>
+|1   |4191.029|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4191.029"><!-- filler --></a></td></tr>
+|6   |4198.317|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4198.317"><!-- filler --></a></td></tr>
+|11   |4200.674|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4200.674"><!-- filler --></a></td></tr>
+|8   |4218.665|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4218.665"><!-- filler --></a></td></tr>
+|8   |4222.637|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4222.637"><!-- filler --></a></td></tr>
+|8   |4226.988|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4226.988"><!-- filler --></a></td></tr>
+|30   |4228.158|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4228.158"><!-- filler --></a></td></tr>
+|30   |4237.220|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4237.220"><!-- filler --></a></td></tr>
+|1   |4251.185|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4251.185"><!-- filler --></a></td></tr>
+|6   |4259.362|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4259.362"><!-- filler --></a></td></tr>
+|3   |4266.286|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4266.286"><!-- filler --></a></td></tr>
+|25   |4266.527|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4266.527"><!-- filler --></a></td></tr>
+|4   |4272.169|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4272.169"><!-- filler --></a></td></tr>
+|200   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable4.htm#4277.528">P</a>|4277.528|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4277.528"><!-- filler --></a></td></tr>
+|7   |4282.898|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4282.898"><!-- filler --></a></td></tr>
+|3   |4300.101|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4300.101"><!-- filler --></a></td></tr>
+|8   |4300.650|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4300.650"><!-- filler --></a></td></tr>
+|25   |4309.239|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4309.239"><!-- filler --></a></td></tr>
+|70   |4331.200|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4331.200"><!-- filler --></a></td></tr>
+|15   |4332.030|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4332.030"><!-- filler --></a></td></tr>
+|3   |4333.561|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4333.561"><!-- filler --></a></td></tr>
+|1   |4335.338|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4335.338"><!-- filler --></a></td></tr>
+|1   |4345.168|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4345.168"><!-- filler --></a></td></tr>
+|250   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable4.htm#4348.064">P</a>|4348.064|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4348.064"><!-- filler --></a></td></tr>
+|15   |4352.205|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4352.205"><!-- filler --></a></td></tr>
+|8   |4362.066|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4362.066"><!-- filler --></a></td></tr>
+|15   |4367.832|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4367.832"><!-- filler --></a></td></tr>
+|70   |4370.753|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4370.753"><!-- filler --></a></td></tr>
+|25   |4371.329|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4371.329"><!-- filler --></a></td></tr>
+|15   |4375.954|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4375.954"><!-- filler --></a></td></tr>
+|50   |4379.667|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4379.667"><!-- filler --></a></td></tr>
+|15   |4385.057|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4385.057"><!-- filler --></a></td></tr>
+|25   |4400.097|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4400.097"><!-- filler --></a></td></tr>
+|70   |4400.986|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4400.986"><!-- filler --></a></td></tr>
+|130   |4426.001|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4426.001"><!-- filler --></a></td></tr>
+|50   |4430.189|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4430.189"><!-- filler --></a></td></tr>
+|15   |4430.996|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4430.996"><!-- filler --></a></td></tr>
+|15   |4433.838|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4433.838"><!-- filler --></a></td></tr>
+|7   |4439.461|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4439.461"><!-- filler --></a></td></tr>
+|12   |4448.879|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4448.879"><!-- filler --></a></td></tr>
+|30   |4474.759|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4474.759"><!-- filler --></a></td></tr>
+|70   |4481.811|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4481.811"><!-- filler --></a></td></tr>
+|3   |4510.733|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4510.733"><!-- filler --></a></td></tr>
+|1   |4522.323|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4522.323"><!-- filler --></a></td></tr>
+|7   |4530.552|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4530.552"><!-- filler --></a></td></tr>
+|130   |4545.052|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4545.052"><!-- filler --></a></td></tr>
+|7   |4564.405|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4564.405"><!-- filler --></a></td></tr>
+|130   |4579.350|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4579.350"><!-- filler --></a></td></tr>
+|130   |4589.898|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4589.898"><!-- filler --></a></td></tr>
+|200   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable4.htm#4609.567">P</a>|4609.567|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4609.567"><!-- filler --></a></td></tr>
+|12   |4637.233|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4637.233"><!-- filler --></a></td></tr>
+|130   |4657.901|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4657.901"><!-- filler --></a></td></tr>
+|7   |4721.591|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4721.591"><!-- filler --></a></td></tr>
+|200   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable4.htm#4726.868">P</a>|4726.868|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4726.868"><!-- filler --></a></td></tr>
+|15   |4732.053|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4732.053"><!-- filler --></a></td></tr>
+|100   |4735.906|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4735.906"><!-- filler --></a></td></tr>
+|250   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable4.htm#4764.865">P</a>|4764.865|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4764.865"><!-- filler --></a></td></tr>
+|200   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable4.htm#4806.020">P</a>|4806.020|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4806.020"><!-- filler --></a></td></tr>
+|50   |4847.810|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4847.810"><!-- filler --></a></td></tr>
+|15   |4865.910|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4865.910"><!-- filler --></a></td></tr>
+|250   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable4.htm#4879.864">P</a>|4879.864|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4879.864"><!-- filler --></a></td></tr>
+|25   |4889.042|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4889.042"><!-- filler --></a></td></tr>
+|7   |4904.752|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4904.752"><!-- filler --></a></td></tr>
+|12   |4933.209|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4933.209"><!-- filler --></a></td></tr>
+|70   |4965.080|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="4965.080"><!-- filler --></a></td></tr>
+|15   |5009.334|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="5009.334"><!-- filler --></a></td></tr>
+|25   |5017.163|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="5017.163"><!-- filler --></a></td></tr>
+|25   |5062.037|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="5062.037"><!-- filler --></a></td></tr>
+|7   |5090.495|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="5090.495"><!-- filler --></a></td></tr>
+|30   |5141.783|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="5141.783"><!-- filler --></a></td></tr>
+|25   |5145.308|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="5145.308"><!-- filler --></a></td></tr>
+|8   |5165.773|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="5165.773"><!-- filler --></a></td></tr>
+|1   |5187.746|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="5187.746"><!-- filler --></a></td></tr>
+|7   |5216.814|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="5216.814"><!-- filler --></a></td></tr>
+|1   |5495.874|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="5495.874"><!-- filler --></a></td></tr>
+|1   |5558.702|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="5558.702"><!-- filler --></a></td></tr>
+|1   |5606.733|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="5606.733"><!-- filler --></a></td></tr>
+|1   |5650.704|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="5650.704"><!-- filler --></a></td></tr>
+|1   |5888.584|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="5888.584"><!-- filler --></a></td></tr>
+|1   |5912.085|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="5912.085"><!-- filler --></a></td></tr>
+|2   |6032.127|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6032.127"><!-- filler --></a></td></tr>
+|1   |6043.223|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6043.223"><!-- filler --></a></td></tr>
+|1   |6059.372|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6059.372"><!-- filler --></a></td></tr>
+|30   |6114.923|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6114.923"><!-- filler --></a></td></tr>
+|50   |6172.278|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6172.278"><!-- filler --></a></td></tr>
+|8   |6243.120|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6243.120"><!-- filler --></a></td></tr>
+|1   |6384.717|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6384.717"><!-- filler --></a></td></tr>
+|2   |6416.307|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6416.307"><!-- filler --></a></td></tr>
+|8   |6483.082|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6483.082"><!-- filler --></a></td></tr>
+|8   |6638.221|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6638.221"><!-- filler --></a></td></tr>
+|7   |6639.740|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6639.740"><!-- filler --></a></td></tr>
+|15   |6643.698|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6643.698"><!-- filler --></a></td></tr>
+|8   |6666.359|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6666.359"><!-- filler --></a></td></tr>
+|3   |6677.282|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6677.282"><!-- filler --></a></td></tr>
+|12   |6684.293|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6684.293"><!-- filler --></a></td></tr>
+|4   |6752.834|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6752.834"><!-- filler --></a></td></tr>
+|7   |6861.269|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6861.269"><!-- filler --></a></td></tr>
+|4   |6871.289|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6871.289"><!-- filler --></a></td></tr>
+|1   |6937.664|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6937.664"><!-- filler --></a></td></tr>
+|300   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable3.htm#6965.431">P</a>|6965.431|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="6965.431"><!-- filler --></a></td></tr>
+|4   |7030.251|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7030.251"><!-- filler --></a></td></tr>
+|300   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable3.htm#7067.218">P</a>|7067.218|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7067.218"><!-- filler --></a></td></tr>
+|3   |7068.736|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7068.736"><!-- filler --></a></td></tr>
+|1   |7107.478|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7107.478"><!-- filler --></a></td></tr>
+|1   |7125.820|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7125.820"><!-- filler --></a></td></tr>
+|30   |7147.042|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7147.042"><!-- filler --></a></td></tr>
+|2   |7206.980|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7206.980"><!-- filler --></a></td></tr>
+|60   |7272.936|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7272.936"><!-- filler --></a></td></tr>
+|1   |7311.716|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7311.716"><!-- filler --></a></td></tr>
+|1   |7316.005|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7316.005"><!-- filler --></a></td></tr>
+|2   |7353.293|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7353.293"><!-- filler --></a></td></tr>
+|6   |7372.118|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7372.118"><!-- filler --></a></td></tr>
+|7   |7380.426|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7380.426"><!-- filler --></a></td></tr>
+|300   |7383.980|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7383.980"><!-- filler --></a></td></tr>
+|1   |7392.980|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7392.980"><!-- filler --></a></td></tr>
+|1   |7435.368|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7435.368"><!-- filler --></a></td></tr>
+|600   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable3.htm#7503.869">P</a>|7503.869|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7503.869"><!-- filler --></a></td></tr>
+|400   |7514.652|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7514.652"><!-- filler --></a></td></tr>
+|700   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable3.htm#7635.106">P</a>|7635.106|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7635.106"><!-- filler --></a></td></tr>
+|400   |7723.761|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7723.761"><!-- filler --></a></td></tr>
+|300   |7724.207|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7724.207"><!-- filler --></a></td></tr>
+|600   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable3.htm#7948.176">P</a>|7948.176|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="7948.176"><!-- filler --></a></td></tr>
+|600   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable3.htm#8006.157">P</a>|8006.157|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="8006.157"><!-- filler --></a></td></tr>
+|700   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable3.htm#8014.786">P</a>|8014.786|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="8014.786"><!-- filler --></a></td></tr>
+|600   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable3.htm#8103.693">P</a>|8103.693|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="8103.693"><!-- filler --></a></td></tr>
+|1000   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable3.htm#8115.311">P</a>|8115.311|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="8115.311"><!-- filler --></a></td></tr>
+|300   |8264.522|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="8264.522"><!-- filler --></a></td></tr>
+|1   |8392.27|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#M73">M73</a><a name="8392.27"><!-- filler --></a></td></tr>
+|400   |8408.210|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="8408.210"><!-- filler --></a></td></tr>
+|600   |8424.648|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="8424.648"><!-- filler --></a></td></tr>
+|400   |8521.442|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="8521.442"><!-- filler --></a></td></tr>
+|130   |8667.944|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="8667.944"><!-- filler --></a></td></tr>
+|7   |8771.860|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="8771.860"><!-- filler --></a></td></tr>
+|5   |8849.91|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#M73">M73</a><a name="8849.91"><!-- filler --></a></td></tr>
+|1   |9075.394|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="9075.394"><!-- filler --></a></td></tr>
+|1000   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable3.htm#9122.967">P</a>|9122.967|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="9122.967"><!-- filler --></a></td></tr>
+|15   |9194.638|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="9194.638"><!-- filler --></a></td></tr>
+|400   |9224.499|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="9224.499"><!-- filler --></a></td></tr>
+|11   |9291.531|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="9291.531"><!-- filler --></a></td></tr>
+|50   |9354.220|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="9354.220"><!-- filler --></a></td></tr>
+|700   <a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable3.htm#9657.786">P</a>|9657.786|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="9657.786"><!-- filler --></a></td></tr>
+|130   |9784.503|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="9784.503"><!-- filler --></a></td></tr>
+|5   |10052.06|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#M73">M73</a><a name="10052.06"><!-- filler --></a></td></tr>
+|1   |10332.72|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#M73">M73</a><a name="10332.72"><!-- filler --></a></td></tr>
+|30   |10467.177|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="10467.177"><!-- filler --></a></td></tr>
+|50   |10470.054|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="10470.054"><!-- filler --></a></td></tr>
+|5   |10506.50|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#M73">M73</a><a name="10506.50"><!-- filler --></a></td></tr>
+|6   |10673.565|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="10673.565"><!-- filler --></a></td></tr>
+|2   |10683.034|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="10683.034"><!-- filler --></a></td></tr>
+|1   |10733.87|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#M73">M73</a><a name="10733.87"><!-- filler --></a></td></tr>
+|1   |10759.16|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#M73">M73</a><a name="10759.16"><!-- filler --></a></td></tr>
+|2   |10812.896|Ar II|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="10812.896"><!-- filler --></a></td></tr>
+|1   |11106.46|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#M73">M73</a><a name="11106.46"><!-- filler --></a></td></tr>
+|11   |11488.109|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="11488.109"><!-- filler --></a></td></tr>
+|6   |11668.710|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="11668.710"><!-- filler --></a></td></tr>
+|6   |12112.326|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="12112.326"><!-- filler --></a></td></tr>
+|1   |12139.738|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="12139.738"><!-- filler --></a></td></tr>
+|1   |12343.393|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="12343.393"><!-- filler --></a></td></tr>
+|6   |12402.827|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="12402.827"><!-- filler --></a></td></tr>
+|6   |12439.321|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="12439.321"><!-- filler --></a></td></tr>
+|3   |12456.12|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="12456.12"><!-- filler --></a></td></tr>
+|6   |12487.663|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="12487.663"><!-- filler --></a></td></tr>
+|4   |12702.281|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="12702.281"><!-- filler --></a></td></tr>
+|1   |12733.418|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="12733.418"><!-- filler --></a></td></tr>
+|6   |12802.739|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="12802.739"><!-- filler --></a></td></tr>
+|1   |12933.195|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="12933.195"><!-- filler --></a></td></tr>
+|14   |12956.659|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="12956.659"><!-- filler --></a></td></tr>
+|6   |13008.264|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="13008.264"><!-- filler --></a></td></tr>
+|6   |13213.99|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="13213.99"><!-- filler --></a></td></tr>
+|6   |13228.107|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="13228.107"><!-- filler --></a></td></tr>
+|3   |13230.90|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="13230.90"><!-- filler --></a></td></tr>
+|14   |13272.64|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="13272.64"><!-- filler --></a></td></tr>
+|30   |13313.210|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="13313.210"><!-- filler --></a></td></tr>
+|30   |13367.111|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="13367.111"><!-- filler --></a></td></tr>
+|1   |13499.41|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="13499.41"><!-- filler --></a></td></tr>
+|30   |13504.191|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="13504.191"><!-- filler --></a></td></tr>
+|1   |13599.333|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="13599.333"><!-- filler --></a></td></tr>
+|11   |13622.659|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="13622.659"><!-- filler --></a></td></tr>
+|6   |13678.550|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="13678.550"><!-- filler --></a></td></tr>
+|30   |13718.577|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="13718.577"><!-- filler --></a></td></tr>
+|6   |14093.640|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="14093.640"><!-- filler --></a></td></tr>
+|3   |15046.50|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="15046.50"><!-- filler --></a></td></tr>
+|1   |15172.69|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="15172.69"><!-- filler --></a></td></tr>
+|1   |15989.49|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="15989.49"><!-- filler --></a></td></tr>
+|1   |16519.86|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="16519.86"><!-- filler --></a></td></tr>
+|14   |16940.58|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="16940.58"><!-- filler --></a></td></tr>
+|1   |20616.23|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="20616.23"><!-- filler --></a></td></tr>
+|1   |20986.11|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="20986.11"><!-- filler --></a></td></tr>
+|1   |23133.20|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="23133.20"><!-- filler --></a></td></tr>
+|1   |23966.52|Ar I|<a href="https://www.physics.nist.gov/PhysRefData/Handbook/Tables/argontable7.htm#N73">N73</a><a name="23966.52"><!-- filler --></a></td></tr>

@@ -1,0 +1,24 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from astropy.io import fits
+import os
+
+project_path = '/home/varghese/Desktop/DP2_TANSPEC/'
+file_path = 'lr_background_reduction/spectrum_extraction/extracted_spectra'
+
+files_dictionary = {
+    'hip41815': {
+        's0.5': {
+            'star': 'extracted_hd37725_lr_s0.5.fits',
+            'argon': 'extracted_argon_lr_s0.5hg.fits',
+            'neon': 'extracted_neon_lr_s0.5hg.fits'
+            },
+        's4.0': {
+            'star': 'extracted_hd37725_s4.0.fits',
+            'argon': 'extracted_argon_s4.0_hg.fits',
+            'neon': 'extracted_neon_s4.0_hg.fits'
+            }
+        }
+
+    }
+# End

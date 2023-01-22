@@ -1,0 +1,42 @@
+from matplotlib.backends.backend_pdf import PdfPages
+from scipy.interpolate import interp1d
+import numpy as np
+import matplotlib.pyplot as plt
+from astropy.io import fits
+import os
+
+project = '/home/varghese/Desktop/DP2_TANSPEC'
+
+# lr mode spectra
+data_path = 'lr_background_reduction/spectrum_extraction/extracted_spectra'
+file_path = os.path.join(project, data_path, 'Ext_hd37725_lr_s0.5hg.fits')
+fitted_wavelength = np.load('wavelength_calibrated.npy')
+
+star = fits.getdata(file_path, ext=0)[0]
+sky = fits.getdata(file_path, ext=1)[0]
+
+star_sky_sbtr = star - sky
+mask = fitted_wavelength > 0
+
+lr_wavelength = np.load('wavelength_calibrated.npy')
+
+fig, axs = plt.subplots(5, 2)
+
+pdfplots = PdfPages('xd_to_lr_connection.pdf')
+for order in range(0, 10, 1):
+    fig, ax = plt.subplots(2, figsize=(16, 9))
+    data = np.load(
+        'xd_flux_wavelength/flux_wavelength_{}.npy'.format(order)
+    )
+    xd_interp = interp1d(data[1], data[0])
+    wl_mask = (lr_wavelength > data[1, 0]) & (lr_wavelength < data[1, -1])
+    wl_region = fitted_wavelength[wl_mask]
+    xd_updated = xd_interp(wl_region)
+    lr_region = star_sky_sbtr[wl_mask]
+    ax[0].plot(wl_region, lr_region)
+    ax[1].plot(data[1], data[0])
+    ax[1].plot(wl_region, xd_updated)
+    pdfplots.savefig()
+pdfplots.close()
+
+# End

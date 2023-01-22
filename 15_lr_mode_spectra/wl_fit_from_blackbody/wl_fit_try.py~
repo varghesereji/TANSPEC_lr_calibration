@@ -1,0 +1,15 @@
+import numpy as np
+
+wl = np.array([25000,
+               15046,
+               15824,
+               16685,
+               17637])
+pixels = np.array([1536,
+                   1060,
+                   1108,
+                   1120])
+full_pixels = np.arange(0, 2048, 1)
+
+fitting = np.polyfit(pixels, wl, 3)
+print(fitting)

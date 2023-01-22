@@ -1,0 +1,9 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+wavelengths = np.load('wavelength_calibrated.npy')
+
+R = 230
+dlambda = R * wavelengths
+print(wavelengths)
